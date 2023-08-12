@@ -18,7 +18,7 @@ const HomePage = () => {
     window.open(url, "_blank");
   }
   return (
-    <header className="lg:relative lg:h-screen lg:mt-0 mt-36">
+    <header id="home" className="lg:relative lg:h-screen lg:mt-0 mt-36">
 
       <figure className="hidden lg:block w-full">
         <Image className="object-fill ml-auto" src={matero} alt="cover" />
@@ -29,14 +29,14 @@ const HomePage = () => {
 
       <section className="h-full lg:absolute lg:top-0 lg:w-1/2 px-8 md:px-16 lg:rounded-ee-full bg-white">
         
-        <div className={`h-full flex flex-col justify-center ${animation}`}>
+        <div className={`h-full w-4/5 flex flex-col justify-center ${animation}`}>
           <p className="text-7xl md:text-9xl mb-2 font-HelveticaBold tracking-wide text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-blue-500">
           SirCraft
         </p>
         <p className="md:text-lg font-HelveticaRegular text-black">
           Creando historias con nuestras manos!
         </p>
-        <div className="mt-2 w-5/6 h-1 bg-gradient-to-br from-purple-600 to-blue-500"></div>
+        <div className="mt-2 w-[95%] h-1 bg-gradient-to-br from-purple-600 to-blue-500"></div>
         <div className="grid md:grid-flow-col place-items-start md:place-items-center place-content-start md:gap-10 mt-10">
           <button
             className="flex items-center text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl font-Titillium font-semibold rounded-md text-xs md:text-sm px-5 py-3 text-center mb-3 md:mb-0"

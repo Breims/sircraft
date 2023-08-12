@@ -1,5 +1,6 @@
 "use client"
 
+import { Link } from "react-scroll";
 import { useState } from "react"
 import Image from "next/image";
 import sircraft from "@public/assets/logos/sircraft.png";
@@ -39,12 +40,12 @@ export const NavbarLanding = () => {
           />
       </section>
       <ul className={`${openMenu} ${navMobileStyle} grid lg:flex lg:sticky w-full  lg:justify-center lg:divide-transparent lg:my-4 divide-y divide-purple-900`}>
-        <li className={landingStyle} onClick={() => toggleMenu()} >Inicio</li>
-        <li className={landingStyle} onClick={() => toggleMenu()} >Sobre Nosotros</li>
-        <li className={landingStyle} onClick={() => toggleMenu()} >Lineas</li>
-        <li className={landingStyle} onClick={() => toggleMenu()} >Catalogo</li>
-        <li className={landingStyle} onClick={() => toggleMenu()} >Servicios</li>
-        <li className={`flex lg:hidden items-center gap-2 ${landingStyle}`} onClick={() => toggleMenu()} >
+        <Link to="home" smooth={true} duration={500} className={landingStyle} onClick={() => toggleMenu()} >Inicio</Link>
+        <Link to="aboutus" smooth={true} duration={500} className={landingStyle} onClick={() => toggleMenu()} >Sobre Nosotros</Link>
+        <Link to="lines" smooth={true} duration={500} className={landingStyle} onClick={() => toggleMenu()} >Lineas</Link>
+        <Link to="" smooth={true} duration={500} className={landingStyle} onClick={() => toggleMenu()} >Catalogo</Link>
+        <Link to="" smooth={true} duration={500} className={landingStyle} onClick={() => toggleMenu()} >Servicios</Link>
+        <Link to="contactus" smooth={true} duration={500} className={`flex lg:hidden items-center gap-2 ${landingStyle}`} onClick={() => toggleMenu()} >
           Contactanos
           <Image 
             src={coffeeLight}
@@ -52,9 +53,12 @@ export const NavbarLanding = () => {
             height={25}
             alt="coffee"
           />
-          </li>
+          </Link>
       </ul>
-      <button className="hidden lg:flex items-center justify-center text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl font-HelveticaBold rounded-md px-10 mx-16 my-4 lg:gap-2">
+      <Link 
+      to="contactus"
+      smooth={true} duration={500}
+      className="hidden lg:flex items-center justify-center text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl font-HelveticaBold rounded-md px-10 mx-16 my-4 lg:gap-2">
         Contactanos
         <Image 
          src={coffee}
@@ -62,7 +66,7 @@ export const NavbarLanding = () => {
          height={25}
          alt="coffee"
         />
-      </button>
+      </Link>
     </nav>
   );
 };
