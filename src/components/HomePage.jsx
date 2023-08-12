@@ -22,7 +22,7 @@ const HomePage = () => {
 
       <figure className="hidden lg:block w-full">
         <Image className="object-fill ml-auto" src={matero} alt="cover" />
-        <section className="mt-6">
+        <section className="mt-12">
           <Decoration />
         </section>
       </figure>

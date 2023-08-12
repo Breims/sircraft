@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@public/assets/logos/SirCraft-2.png";
+import logo from "@public/assets/logos/sircraft.png";
 import enviar from "@public/assets/icons/enviar-gray.svg";
 
 const Footer = () => {

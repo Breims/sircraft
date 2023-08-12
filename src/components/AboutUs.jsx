@@ -22,7 +22,7 @@ const AboutUs = () => {
             SOBRE NOSOTROS
           </p>
 
-          <p className="mx-8 my-6 md:p-8 md:my-0 md:mx-10 lg:mx-0 lg:mb-20 text-gray-600 font-Titillium">
+          <p className="mx-8 my-6 md:p-8 md:my-0 md:mx-10 lg:mx-0 lg:mr-8 lg:mb-20 text-gray-600 font-Titillium">
             La idea surge en Cartagena en el año 2017 como VDArt twins, siendo
             un negocio familiar en donde solo se ofrecían peluches y muñecas, al
             pasar el tiempo se incorporaron más productos como artesanías en
