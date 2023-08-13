@@ -8,7 +8,7 @@ import * as constants from "../../style/linesStyles.js";
 const Recordatorios = () => {
   return (
     <>
-      <header>
+      <header className="mt-16 lg:mt-0">
         <NavbarLines />
         <section className="relative">
           <figure className="grid place-content-center">
@@ -19,7 +19,7 @@ const Recordatorios = () => {
             />
           </figure>
           <div className="absolute h-full w-full top-0 bg-black opacity-70">
-            <p className="h-full mt-6 grid place-content-center place-items-center text-white font-HelveticaBold text-2xl md:text-5xl lg:text-7xl md:mt-0 animate-fade-down animate-once animate-duration-500 animate-delay-300">
+            <p className="h-full grid place-content-center place-items-center text-white font-HelveticaBold text-xl md:text-5xl lg:text-7xl animate-fade-down animate-once animate-duration-500 animate-delay-300">
               ¡RECORDATORIOS DE TODO TIPO!
             </p>
           </div>

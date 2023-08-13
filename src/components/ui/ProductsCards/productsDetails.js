@@ -22,7 +22,7 @@ export const products = [
       linea: 'Muñecas',
       descripcion: 'Vive momentos con una compañera de aventuras, confidentes de sueños y testigos de momentos especiales con nuestras muñecas.',
       image: '/assets/images/cards/muñecas.jpg',
-      ruteLine:'/munecas'
+      ruteLine:'/dolls'
     },
     {
       linea: 'Peluches',
