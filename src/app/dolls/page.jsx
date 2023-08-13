@@ -36,34 +36,27 @@ const Dolls = () => {
           <div className={constants.contentPageGlobal}>
             <div className={constants.contentText}>
               <p className={constants.paragraph}>
-                Nuestros llaveros son pequeñas piezas de arte diseñadas para
-                agregar un toque especial a tus llaves y accesorios. Cada uno de
-                ellos es una muestra de creatividad y destreza, elaborados con
-                materiales de alta calidad y un toque artesanal que los hace
-                únicos. Ya sea que elijas un encantador llavero en crochet, una
-                delicada creación en porcelana o un adorable diseño en peluche,
-                cada llavero de SirCraft está diseñado para alegrar tus días y
-                convertirse en un compañero inseparable.
+                Nuestras muñecas son auténticas creaciones artísticas que
+                reflejan la pasión por el detalle y la belleza en cada puntada.
+                El crochet y el uso de trapos nos permiten dar vida a muñecas
+                encantadoras que despiertan sonrisas y emociones. Cada una de
+                ellas está diseñada para convertirse en un compañero fiel, un
+                regalo lleno de significado o simplemente una pieza decorativa
+                que alegrará cualquier espacio.
               </p>
               <p className={constants.paragraph}>
-                En SirCraft, la pasión por el arte y la artesanía se refleja en
-                cada llavero que creamos. Nuestro talentoso equipo de artesanos
-                especializados en crochet, porcelana y peluche dedica tiempo y
-                cuidado a cada detalle para garantizar que nuestros llaveros
-                sean auténticos y llenos de personalidad. Los llaveros en
-                crochet son tejidos a mano con hilos suaves y coloridos, creando
-                patrones y formas encantadoras que harán que tus llaves
-                destaquen.
+                En SirCraft, el arte del crochet y el ingenio con los trapos se
+                unen para dar vida a nuestras muñecas. Nuestro talentoso equipo
+                de artesanos combina su habilidad con la creatividad, utilizando
+                hilos de colores vibrantes y trapos suaves para tejer y dar
+                forma a cada muñeca con dedicación y precisión.
               </p>
               <p>
-                Nuestros llaveros de porcelana son modelados con precisión
-                utilizando porcelanicrón, logrando piezas delicadas y detalladas
-                que transmiten elegancia y belleza. Y si te encantan los
-                peluches, nuestros llaveros de peluche son suaves, adorables y
-                están diseñados para robar corazones con su ternura. Cada
-                llavero se crea con dedicación y habilidad artística, asegurando
-                que el resultado sea una pequeña obra de arte que te acompañará
-                a donde quiera que vayas.
+                El crochet nos permite crear detalles encantadores y formas
+                adorables, mientras que el uso de trapos nos da la posibilidad
+                de agregar texturas y personalidad única a cada muñeca. Cada
+                puntada es una expresión artística que refleja el cariño y la
+                atención al detalle que ponemos en cada creación.
               </p>
             </div>
 
@@ -94,24 +87,26 @@ const Dolls = () => {
             </div>
             <div className={constants.contentTextOrderTwo}>
               <p className={constants.paragraph}>
-                En SirCraft, creemos que los llaveros son más que simples
-                accesorios; son expresiones de estilo, personalidad y un toque
-                de alegría en tu día a día. Nuestro propósito es ofrecerte
-                llaveros que te hagan sonreír cada vez que los veas, y que
-                reflejen tu gusto personal y pasión por la creatividad.
+                En SirCraft, creemos que las muñecas son mucho más que simples
+                juguetes; son compañeras de aventuras, confidentes de sueños y
+                testigos de momentos especiales. Nuestro propósito es ofrecerte
+                muñecas que despierten la imaginación y la alegría en personas
+                de todas las edades..
               </p>
               <p className={constants.paragraph}>
-                Nuestros llaveros son más que solo adornos, son una forma de
-                llevar contigo algo especial y único. Puedes elegir un llavero
-                con tus colores favoritos, un diseño que represente tus
-                intereses o incluso una versión miniatura de un ser querido en
-                forma de peluche.
+                Ya sea que busques una muñeca para un niño que necesita un amigo
+                para jugar, un regalo especial para alguien querido o
+                simplemente una pieza decorativa para tu hogar, nuestras muñecas
+                son la elección perfecta. Cada muñeca está hecha con amor y
+                cariño, llevando consigo un pedacito de la pasión por el arte y
+                la artesanía que nos define.
               </p>
               <p className={constants.paragraph}>
-                Además de ser un accesorio práctico, un llavero SirCraft es una
-                excelente opción para regalar a tus seres queridos en ocasiones
-                especiales. Es un regalo significativo y único que transmite
-                cariño y atención a quienes más te importan.
+                Nuestro deseo es que nuestras muñecas se conviertan en tesoros
+                que formen parte de momentos memorables y que traigan alegría y
+                calidez a tu vida. Cada muñeca tiene su propia personalidad y
+                belleza, lista para acompañarte en tus aventuras y convertirse
+                en una pieza preciada en tu colección.
               </p>
             </div>
           </div>
