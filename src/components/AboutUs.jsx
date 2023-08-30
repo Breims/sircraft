@@ -1,28 +1,28 @@
 import Image from "next/image";
 import Decoration from "./ui/Decoration";
-import aboutus from "@public/assets/images/cover-about.jpg";
+import aboutus from "@public/assets/images/cover-about.webp";
 
 const AboutUs = () => {
   return (
     <>
       <section
         id="aboutus"
-        className="grid lg:grid-cols-2 lg:place-content-center mt-10 lg:mt-0"
+        className="grid lg:grid-cols-2 xl:place-content-center xl:mb-20 px-8 xl:px-12 gap-8"
       >
         <div className="order-2">
           <Image
-            className="w-full h-full object-fill py-4 px-8 md:px-16 lg:p-16"
+            className="rounded-xl shadow-xl w-full h-full object-cover"
             src={aboutus}
             alt="aboutus"
           />
         </div>
 
         <div className="grid place-items-start place-content-center order-1 lg:order-2">
-          <p className="font-HelveticaBold text-xl mx-8 md:text-3xl lg:text-4xl md:mx-10 md:mt-8 md:px-8 lg:mt-0 lg:mx-0 lg:p-8 tracking-wide">
+          <p className="font-HelveticaBold text-xl md:text-3xl xl:text-5xl tracking-wide py-8">
             SOBRE NOSOTROS
           </p>
 
-          <p className="mx-8 my-6 md:p-8 md:my-0 md:mx-10 lg:mx-0 lg:mr-8 lg:mb-20 text-gray-600 font-Titillium">
+          <p className="text-gray-600 font-Titillium text-lg lg:text-xl">
             La idea surge en Cartagena en el año 2017 como VDArt twins, siendo
             un negocio familiar en donde solo se ofrecían peluches y muñecas, al
             pasar el tiempo se incorporaron más productos como artesanías en
@@ -32,9 +32,6 @@ const AboutUs = () => {
             naciendo de esta forma SirCraft.
           </p>
         </div>
-      </section>
-      <section className="flex justify-start ml-16">
-        <Decoration />
       </section>
     </>
   );
