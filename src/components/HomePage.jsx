@@ -25,15 +25,17 @@ const HomePage = () => {
           alt="cover"
         />
       </figure>
-      <section className="h-full xl:absolute xl:top-0 xl:w-1/2 px-8 xl:px-12 lg:rounded-ee-full bg-white">
+      
+      <section className="xl:absolute xl:top-0 xl:w-[55%] h-full px-8 xl:px-12 xl:rounded-ee-full bg-white">
         <div
-          className={`h-full w-[16.5rem] md:w-[30rem] 2xl:w-[34rem] flex flex-col justify-center ${animation}`}
+          className={`h-full w-full lg:w-[32rem] grid place-content-center ${animation}`}
         >
-          <p className="text-[4.4rem] md:text-9xl 2xl:text-[9rem] mb-2 font-HelveticaBold tracking-wide text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-blue-500">
-            SirCraft
-          </p>
-          <p className="text-[0.9rem] md:text-lg font-HelveticaRegular text-black">
-            Creando historias con nuestras manos!
+          <div className="text-center lg:text-justify font-HelveticaBold tracking-wide text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-blue-500 uppercase grid place-content-center">
+            <p className="text-[3.9rem] md:text-[7.1rem] xl:text-[6.3rem]">Creando</p>
+            <span className="text-[3.8rem] md:text-[6.75rem] xl:text-[6rem]">Historias</span>
+          </div>
+          <p className="m-auto text-[0.9rem] md:text-3xl xl:text-[2.3rem] tracking-widest font-HelveticaRegular text-slate-600 uppercase">
+             con nuestras manos!
           </p>
           <div className="mt-2 w h-1 bg-gradient-to-br from-purple-600 to-blue-500"></div>
           <div className="grid md:grid-flow-col place-items-start md:place-items-center place-content-start md:gap-10 mt-10">

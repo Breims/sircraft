@@ -44,9 +44,9 @@ const NavbarLines = () => {
         </div>
 
         <section
-          className={`${openMenuLineas} fixed top-0 left-0 w-60 md:w-96 h-screen px-8 xl:px-12 py-3 backdrop-blur-md bg-white bg-opacity-90 shadow-lg`}
+          className={`${openMenuLineas} fixed top-0 left-0 w-full md:w-96 h-auto md:h-screen px-8 xl:px-12 py-3 backdrop-blur-md bg-white bg-opacity-90 shadow-lg`}
         >
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center mb-3">
             <Link key="inicio" href="/">
               <figure>
                 <Image
@@ -67,24 +67,22 @@ const NavbarLines = () => {
               alt="hamburguesa"
             />
           </div>
-
-          <div className="h-0.5 w-full bg-purple-700 mt-4" />
           <ul
-            className={`w-full h-[90%] grid text-base uppercase divide-y-2 divide-purple-700`}
+            className={`w-full grid text-base uppercase divide-y-2 divide-purple-700`}
           >
             {dataLines.map((data) => (
               <NavLink
                 key={data.id}
                 href={`/${data.route}`}
-                activeClasses="underline mx-3 p-3 grid place-items-start font-HelveticaBold text-purple-600"
-                defaultClasses="mx-3 p-3 grid place-items-start font-Helvetica"
+                activeClasses="underline mx-3 p-3 md:py-6 lg:py-3 xl:py-6 grid place-items-start font-HelveticaBold text-purple-600 hover:bg-slate-100"
+                defaultClasses="mx-3 p-3 md:py-6 lg:py-3 xl:py-6 grid place-items-start font-HelveticaMedium hover:bg-slate-100"
                 text={data.line}
                 onClick={() => toggleMenuLineas()}
               />
             ))}
             <Link
               href={"/"}
-              className="flex items-center py-3 px-6 font-HelveticaBold"
+              className="flex items-center py-3 px-6 md:py-6 lg:py-3 xl:py-6 font-HelveticaMedium"
             >
               <Image
                 className="w-6 mr-2"
