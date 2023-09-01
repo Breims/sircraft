@@ -44,7 +44,7 @@ const HomePage = () => {
               className="flex items-center text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl font-Titillium font-semibold rounded-md text-xs md:text-sm px-3 md:px-5 py-3 text-center"
               onClick={openWhatsapp}
             >
-              <Image className="w-6 mr-2" src={whatsapp} alt="whatsapp" />
+              <Image className="w-6 mr-2" src={whatsapp} alt="red social whatsapp" />
               WhatsApp
             </button>
             <div>
