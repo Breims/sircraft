@@ -50,7 +50,7 @@ const NavbarLanding = () => {
           to="home"
           smooth={true}
           duration={500}
-          className="py-4 px-0 xl:px-4 hover:underline hover:text-purple-700"
+          className="py-4 px-4 hover:underline hover:text-purple-700"
           onClick={() => toggleMenu()}
         >
           Inicio
@@ -59,7 +59,7 @@ const NavbarLanding = () => {
           to="aboutus"
           smooth={true}
           duration={500}
-          className="py-4 px-0 xl:px-4 grid hover:underline hover:text-purple-700"
+          className="py-4 px-4 grid hover:underline hover:text-purple-700"
           onClick={() => toggleMenu()}
         >
           Sobre Nosotros
@@ -68,7 +68,7 @@ const NavbarLanding = () => {
           to="lines"
           smooth={true}
           duration={500}
-          className="py-4 px-0 xl:px-4 hover:underline hover:text-purple-700"
+          className="py-4 px-4 hover:underline hover:text-purple-700"
           onClick={() => toggleMenu()}
         >
           Lineas
@@ -77,7 +77,7 @@ const NavbarLanding = () => {
           to=""
           smooth={true}
           duration={500}
-          className="py-4 px-0 xl:px-4 hover:underline hover:text-purple-700"
+          className="py-4 px-4 hover:underline hover:text-purple-700"
           onClick={() => toggleMenu()}
         >
           Catalogo
@@ -86,7 +86,7 @@ const NavbarLanding = () => {
           to=""
           smooth={true}
           duration={500}
-          className="py-4 px-0 xl:px-4 hover:underline hover:text-purple-700"
+          className="py-4 px-4 hover:underline hover:text-purple-700"
           onClick={() => toggleMenu()}
         >
           Servicios
@@ -95,7 +95,7 @@ const NavbarLanding = () => {
           to="contactus"
           smooth={true}
           duration={500}
-          className={`py-4 flex xl:hidden items-center gap-2`}
+          className={`py-4 px-4 flex xl:hidden items-center gap-2`}
           onClick={() => toggleMenu()}
         >
           Contactanos

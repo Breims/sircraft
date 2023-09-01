@@ -7,13 +7,14 @@ const ContactUs = () => {
   return (
     <section id="contactus" className="md:bg-slate-100 xl:h-screen flex flex-col justify-center px-8 xl:px-12">
       <div className="text-center p-10">
-        <p className="font-HelveticaBold text-xl md:text-3xl xl:text-5xl">
+        <h1 className="font-HelveticaBold text-xl md:text-3xl xl:text-5xl">
           CONTACTANOS!
-        </p>
+        </h1>
       </div>
 
-      <div className="grid xl:grid-cols-2">
-        <div className="xl:px-12">
+      <div className="grid xl:grid-cols-2 place-items-center xl:place-items-stretch">
+
+        <div className="md:px-24">
           <div className="xl:px-12">
             <div className="p-12">
               <p className="font-HelveticaBold text-xl">
@@ -32,7 +33,7 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <div className="mx-12 bg-purple-800 h-0.5"></div>
+          <div className="mx-12 xl:mx-24 bg-purple-800 h-0.5"></div>
 
           <div className="p-12 font-raleway">
             <p className="text-center font-bold text-xl">
@@ -47,7 +48,9 @@ const ContactUs = () => {
               </a>
             </div>
           </div>
+
         </div>
+
         <div className="hidden xl:block m-auto">
           <Image className="h-[600px] object-cover rounded-xl shadow-xl" src={coverContactus} alt="cover" />
         </div>

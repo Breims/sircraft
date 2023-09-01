@@ -15,7 +15,7 @@ const Productslines = () => {
           <div className="w-4 h-8 md:w-7 md:h-14 xl:w-14 xl:h-28 absolute top-6 right-0 md:top-4 rounded-l-full bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl"></div>
         </div>
       </section>
-      <section className="px-8 xl:px-12 mt-10 xl:mb-20">
+      <section className="px-8 xl:px-12 mt-10 md:mb-20">
         <ProductsCards />
       </section>
     </>

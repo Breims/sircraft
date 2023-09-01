@@ -4,6 +4,11 @@ import NavbarLines from "@/components/shared/NavbarLines";
 import comillaS from "@public/assets/icons/comillasSup.svg";
 import comillaD from "@public/assets/icons/comillasDown.svg";
 
+export const metadata = {
+  title: "SirCraft Lineas",
+  description: "Lineas de producción SirCraft",
+}
+
 const Lines = ({ params }) => {
   const data = dataLines.find(
     (routes) => routes.route === `line/${params.route}`
@@ -47,7 +52,7 @@ const Lines = ({ params }) => {
               height={70}
               alt="mugs1"
             />
-            <div className="flex flex-col justify-center text-sm md:text-xl lg:text-sm xl:text-xl lg:p-4 xl:p-10">
+            <div className="flex flex-col justify-center text-xs md:text-xl lg:text-sm xl:text-xl lg:p-4 xl:p-10">
               <p className="pb-4">{data.paragraph1}</p>
               <p className="pb-4">{data.paragraph2}</p>
               <p>{data.paragraph3}</p>
@@ -95,7 +100,7 @@ const Lines = ({ params }) => {
               height={70}
               alt="mugs1"
             />
-            <div className="flex flex-col justify-center text-sm md:text-xl lg:text-sm xl:text-xl lg:p-4 xl:p-10">
+            <div className="flex flex-col justify-center text-xs md:text-xl lg:text-sm xl:text-xl lg:p-4 xl:p-10">
               <p className="pb-4">{data.paragraph4}</p>
               <p className="pb-4">{data.paragraph5}</p>
               <p>{data.paragraph6}</p>

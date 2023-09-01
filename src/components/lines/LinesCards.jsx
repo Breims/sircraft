@@ -34,9 +34,9 @@ const LinesCards = () => {
             </div>
           </Link>
         ))}
-        <div className="hidden lg:block w-28 h-28 m-auto rounded-full bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl"></div>
-        <div className="hidden lg:block w-28 h-28 m-auto rounded-full bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl"></div>
-        <div className="hidden lg:block w-28 h-28 m-auto rounded-full bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl"></div>
+        <div className="hidden xl:block w-28 h-28 m-auto rounded-full bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl"></div>
+        <div className="hidden xl:block w-28 h-28 m-auto rounded-full bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl"></div>
+        <div className="hidden xl:block w-28 h-28 m-auto rounded-full bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl"></div>
       </div>
     </>
   );
