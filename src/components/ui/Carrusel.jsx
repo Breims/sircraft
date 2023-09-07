@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import data from "../components/lines/Lines.js";
+import data from "../lines/Lines.js";
 
 const Carrusel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

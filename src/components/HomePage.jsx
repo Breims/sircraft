@@ -1,66 +1,73 @@
-"use client";
-
-import Image from "next/image";
-import matero from "/public/assets/images/cover-materos.webp";
-import whatsapp from "/public/assets/logos/whatsapp.svg";
-import correo from "/public/assets/icons/correo.svg";
+import Carrusel from "./ui/Carrusel";
 
 const animation =
   "animate-fade-right animate-once animate-duration-500 animate-delay-300 animate-ease-linear animate-normal animate-fill-backwards";
 
 const HomePage = () => {
-  const openWhatsapp = () => {
-    const url = `https://wa.me/+573006045248`;
-    window.open(url, "_blank");
-  };
-
   return (
-    <header id="home" className="xl:relative h-screen md:mt-0">
-      <figure className="hidden xl:block w-full">
-        <Image
-          className="h-screen w-full object-cover"
-          src={matero}
-          alt="cover"
-        />
+    <header id="home" className={`relative mt-[80px] lg:m-auto`}>
+      <figure className="w-full">
+        <Carrusel />
       </figure>
 
-      <section className="xl:absolute xl:top-0 xl:w-[50%] 2xl:w-[45%] h-full px-8 xl:px-12 xl:rounded-ee-full bg-white">
-        <div
-          className={`h-full w-full xl:w-[32rem] grid place-content-center ${animation}`}
-        >
-          <div className="text-center text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-blue-500 grid place-content-center">
-            <p className="text-[1.8rem] md:text-[4rem] lg:text-[5.5rem] xl:text-[2.96rem] font-HelveticaBlack">
+      <section className="absolute top-0 w-full h-full px-8 xl:px-12 bg-slate-950 bg-opacity-70">
+        <div className={`w-full h-full grid place-content-center ${animation}`}>
+          <div className="text-center grid place-content-center">
+            <p className="text-[1.6rem] md:text-[4.3rem] lg:text-[5.5rem] xl:text-[6rem] font-poppins font-bold text-transparent bg-clip-text bg-gradient-to-l from-pink-500 via-sky-500 to-purple-800">
               CREANDO HISTORIAS
             </p>
-            <p className="text-[1.45rem] md:text-[3.2rem] lg:text-[4.45rem] xl:text-[2.37rem] tracking-widest font-HelveticaRegular text-slate-600">
+            <p className="text-[1.2rem] md:text-[3.2rem] lg:text-[4.1rem] xl:text-[4.5rem] 2xl:text-[4.7rem] tracking-widest font-raleway font-light text-slate-50">
               ¡CON NUESTRAS MANOS!
             </p>
           </div>
 
-          <div className="mt-2 w h-0.5 bg-gradient-to-br from-purple-600 to-blue-500"></div>
+          <div className="mt-2 h-0.5 bg-slate-50"></div>
 
-          <div className="flex items-center justify-center md:justify-start gap-4 md:gap-10 mt-10">
-            <button
-              className="flex items-center text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl font-Titillium font-semibold rounded-md text-xs md:text-sm px-3 md:px-5 py-3 text-center"
-              onClick={openWhatsapp}
-            >
-              <Image className="w-6 mr-2" src={whatsapp} alt="red social whatsapp" />
-              WhatsApp
-            </button>
+          <div className="flex items-center justify-center gap-4 md:gap-10 my-2 md:my-10">
             <div>
-              <span className="flex gap-1 items-center font-Titillium text-sm md:text-base text-black mb-1">
-                <Image
-                  className="w-4 md:w-5 md:text-base"
-                  src={correo}
-                  alt="gmail"
-                />
-                sircraft.desing@gmail.com
-              </span>
-              <span className="font-Titillium font-bold text-black">
+              <span className="font-bold text-slate-50 text-xs md:text-xl">
                 Escribenos!
+              </span>
+              <span className="flex gap-1 items-center text-xs md:text-xl font-raleway text-slate-50">
+                <svg
+                  className="w-8 md:w-auto"
+                  width={44}
+                  height={44}
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="#fff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" />
+                  <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" />
+                  <path d="M3 6l9 6l9 -6" />
+                  <path d="M15 18h6" />
+                  <path d="M18 15l3 3l-3 3" />
+                </svg>
+                sircraft.desing@gmail.com
               </span>
             </div>
           </div>
+
+          <figure className="m-auto hidden lg:block">
+            <svg
+              className="text-slate-50 m-auto animate-bounce w-8 md:w-auto"
+              width={70}
+              height={70}
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#fff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="" />
+              <path d="M7 7l5 5l5 -5" />
+              <path d="M7 13l5 5l5 -5" />
+            </svg>
+          </figure>
         </div>
       </section>
     </header>

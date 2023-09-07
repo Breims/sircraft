@@ -1,4 +1,4 @@
-import Carrusel from "@/components/Carrusel";
+import Carrusel from "@/components/ui/Carrusel.jsx";
 import Image from "next/image";
 import { allServicios } from "./servicios.js";
 import MenuFlotante from "@/components/ui/MenuFlotante.jsx";

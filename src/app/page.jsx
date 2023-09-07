@@ -18,7 +18,6 @@ export default function Home() {
       <section className="flex justify-end xl:hidden">
         <Decoration />
       </section>
-      <AboutUs />
       <Productslines />
       <section className="flex justify-start md:hidden">
         <Decoration />
