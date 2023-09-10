@@ -1,6 +1,5 @@
 import Image from "next/image";
 import dataLines from "@/components/lines/Lines.js";
-import NavbarLines from "@/components/shared/NavbarLines";
 import comillaS from "@public/assets/icons/comillasSup.svg";
 import comillaD from "@public/assets/icons/comillasDown.svg";
 
@@ -17,8 +16,7 @@ const Lines = ({ params }) => {
   return (
     <section key={data.id}>
       <header>
-        <NavbarLines />
-        <section className="relative mt-20 md:mt-0">
+        <section className="relative mt-12 md:mt-0">
           <figure className="grid place-content-center place-items-center lg:h-screen">
             <Image
               className="lg:h-screen w-screen object-cover"

@@ -1,9 +1,14 @@
-import AboutUs from "@/components/AboutUs";
-import ContactUs from "@/components/ContactUs";
 import HomePage from "@/components/HomePage";
 import Productslines from "@/components/ProductsLines";
-import NavbarLanding from "@/components/shared/NavbarLanding";
 import Decoration from "@/components/ui/Decoration";
+import { Poppins } from "next/font/google"
+
+const poppins = Poppins({
+  weight: ["100", "300", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+})
 
 export const metadata = {
   title: "SirCraft Landing",
@@ -13,7 +18,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <NavbarLanding />
+    <main className={poppins.className}>
       <HomePage />
       <section className="flex justify-end xl:hidden">
         <Decoration />
@@ -22,7 +27,7 @@ export default function Home() {
       <section className="flex justify-start md:hidden">
         <Decoration />
       </section>
-      <ContactUs />
+    </main>
     </>
   );
 }

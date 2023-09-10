@@ -3,14 +3,12 @@ import Image from "next/image";
 import { allServicios } from "./servicios.js";
 import MenuFlotante from "@/components/ui/MenuFlotante.jsx";
 import Button from "@/components/ui/Button.jsx";
-import NavbarServicios from "@/components/shared/NavbarServicios.jsx";
 
 
 const Servicios = () => {
   return (
     <>
       <header className="relative z-10 mt-20 md:mt-0">
-        <NavbarServicios />
         <figure>
           <Carrusel />
         </figure>
