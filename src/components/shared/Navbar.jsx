@@ -43,7 +43,7 @@ const Navbar = () => {
     <>
       <nav className="fixed top-0 z-20 flex flex-wrap lg:flex-nowrap h-[55px] lg:h-[70px] w-full justify-between items-center backdrop-blur-md bg-slate-50 bg-opacity-90 shadow-lg">
         <section className="w-full flex justify-between px-8 xl:px-12">
-          <Link href="/" className="flex items-center" onClick={clearAllMenu}>
+          <Link href="/" className="flex items-center" onClick={openAccordion}>
             <Image
               className="w-8 lg:w-9 xl:w-10"
               src={sircraft}
