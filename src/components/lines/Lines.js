@@ -20,7 +20,7 @@ const dataLines = [
     description:
       "Vive una experiencia excepcional al permitirte crear tazas que cuenten tu historia.",
     image: "/assets/images/mugs.webp",
-    route: "line/mugs",
+    route: "lines/mugs",
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ const dataLines = [
     description:
       "Celebra los momentos más especiales de la vida, honrar a seres queridos, transmitir mensajes de aliento y aprecio, con nuestros recordatorios.",
     image: "/assets/images/recordatorio.webp",
-    route: "line/recordatorios",
+    route: "lines/recordatorios",
   },
   {
     id: 3,
@@ -71,7 +71,7 @@ const dataLines = [
     description:
       "Lleva expresiones de estilo, personalidad y un toque de alegría en tu día a día con nuestros llaveros.",
     image: "/assets/images/llaveros.webp",
-    route: "line/llaveros",
+    route: "lines/llaveros",
   },
   {
     id: 4,
@@ -95,7 +95,7 @@ const dataLines = [
     description:
       "Vive momentos con una compañera de aventuras, confidentes de sueños y testigos de momentos especiales con nuestras muñecas.",
     image: "/assets/images/muñecas.webp",
-    route: "line/dolls",
+    route: "lines/dolls",
   },
   {
     id: 5,
@@ -119,7 +119,7 @@ const dataLines = [
     description:
       "Vive la experiencia de tener un amigo que está siempre ahí para ti, listos para brindarte consuelo y cariño con nuestros peluches.",
     image: "/assets/images/peluche.webp",
-    route: "line/peluches",
+    route: "lines/peluches",
   },
   {
     id: 6,
@@ -142,7 +142,7 @@ const dataLines = [
     description:
       "Decora tu espacio con un símbolo de pasión, inspiración y fandom con nuestras figuras.",
     image: "/assets/images/figuras2.webp",
-    route: "line/figuras",
+    route: "lines/figuras",
   },
   {
     id: 7,
@@ -166,7 +166,7 @@ const dataLines = [
     description:
       "Ahorra dinero de forma divertida y creativa expresando tu amor por el anime, los cómics y los videojuegos.",
     image: "/assets/images/alcancias1.webp",
-    route: "line/alcancias",
+    route: "lines/alcancias",
   },
   {
     id: 8,
@@ -190,7 +190,7 @@ const dataLines = [
     description:
       "Decora tu espacio o jardín con tus personajes favoritos del anime, cómics o videojuegos con nuestros materos.",
     image: "/assets/images/materos1.webp",
-    route: "line/materos",
+    route: "lines/materos",
   },
   {
     id: 9,
@@ -214,7 +214,7 @@ const dataLines = [
     description:
       "Conectar con tus personajes y mundos favoritos de una manera única y artística con nuestros cuadros.",
     image: "/assets/images/cuadros1.webp",
-    route: "line/cuadros",
+    route: "lines/cuadros",
   },
 ];
 

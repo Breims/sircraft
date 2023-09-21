@@ -1,16 +1,17 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-const NavLink = ({ href, text, activeClasses, defaultClasses ,key, logic }) => {
+import Link from "next/link";
+
+const NavLink = ({ href, text, activeClasses, defaultClasses, key, logic, image }) => {
   const path = usePathname();
   const isActive = path === href;
 
   return (
     <Link href={href} key={key} onClick={logic}>
-        <li className={`${isActive ? activeClasses : defaultClasses }`}>
-            {text}
-        </li>
+        <div className={`flex ${isActive ? activeClasses : defaultClasses }`}>
+           {image} {text}
+        </div>
     </Link>
   );
 };

@@ -10,7 +10,7 @@ export const metadata = {
 
 const Lines = ({ params }) => {
   const data = dataLines.find(
-    (routes) => routes.route === `line/${params.route}`
+    (routes) => routes.route === `lines/${params.route}`
   );
 
   return (

@@ -15,11 +15,11 @@ const Footer = () => {
               alt="sircraft"
             />
             <div className=" ">
-              <p className="text-center text-slate-800 md:text-xl md:tracking-wide text-xs font-bold">
+              <p className="text-center text-slate-800 md:text-lg md:tracking-wide text-xs font-bold">
                 CREANDO HISTORIAS
               </p>
               <div className="bg-purple-200 h-0.5" />
-              <p className="text-center md:tracking-wide md:text-xl text-slate-500 text-xs">
+              <p className="text-center md:tracking-wide md:text-lg text-slate-500 text-xs">
                 Con Nuestras Manos
               </p>
             </div>
@@ -27,46 +27,46 @@ const Footer = () => {
         </div>
 
         <div className="md:p-8">
-          <p className="font-bold text-slate-800 md:text-xl md:p-2 py-2">
+          <p className="font-bold text-slate-800 md:text-lg md:p-2 py-2">
             Servicios
           </p>
-          <ul className="md:py-4 py-1 font-Titillium">
-            <li className="py-2 md:p-2 text-slate-500 md:text-base text-xs">
+          <ul className="md:py-4 py-1">
+            <li className="py-2 md:p-2 text-slate-500 text-xs md:text-sm">
               Creaciones Personalizadas
             </li>
-            <li className="py-2 md:p-2 text-slate-500 md:text-base text-xs">
+            <li className="py-2 md:p-2 text-slate-500 text-xs md:text-sm">
               Publicidad
             </li>
-            <li className="py-2 md:p-2 text-slate-500 md:text-base text-xs">
+            <li className="py-2 md:p-2 text-slate-500 text-xs md:text-sm">
               Capacitaciones
             </li>
-            <li className="py-2 md:p-2 text-slate-500 md:text-base text-xs">
+            <li className="py-2 md:p-2 text-slate-500 text-xs md:text-sm">
               Sublimación
             </li>
           </ul>
         </div>
 
         <div className="col-span-2 lg:col-auto">
-          <div className="mx-12 bg-purple-200 h-0.5 lg:hidden"></div>
+          <div className="md:mx-12 bg-purple-200 h-0.5 lg:hidden"></div>
 
-          <div className="text-slate-800">
-            <div className="px-12 py-6">
-              <p className="md:text-xl font-bold">Correo Electrónico</p>
-              <p className="text-xs md:text-base text-slate-500">
+          <div>
+            <div className="md:px-12 py-6">
+              <p className="font-bold text-slate-800 md:text-lg">Correo Electrónico</p>
+              <p className="text-xs md:text-sm text-slate-500">
                 sircraft.desing@gmail.com
               </p>
             </div>
 
-            <div className="px-12 py-6">
-              <p className="md:text-xl font-bold">Telefono</p>
-              <p className="text-xs md:text-base text-slate-500">+57 300 604 5248</p>
+            <div className="md:px-12 py-6">
+              <p className="md:text-lg font-bold">Telefono</p>
+              <p className="text-xs md:text-sm text-slate-500">+57 300 604 5248</p>
             </div>
           </div>
 
-          <div className="mx-12 bg-purple-200 h-0.5"></div>
+          <div className="md:mx-12 bg-purple-200 h-0.5"></div>
 
           <div className="p-1">
-            <p className="text-slate-800 text-center font-bold md:text-xl">
+            <p className="text-slate-800 text-center font-bold md:text-lg">
               Redes Sociales
             </p>
             <div className="py-4 w-1/2 mx-auto grid grid-flow-col place-items-center">

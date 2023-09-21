@@ -1,4 +1,4 @@
-const Button = ({titulo}) => {
+const Button = ({ titulo }) => {
   return (
     <button className="w-64 h-10 p-2 bg-transparent border border-purple-400 rounded-md">
       <div className="w-full h-full flex items-center justify-center">
@@ -7,7 +7,6 @@ const Button = ({titulo}) => {
         </div>
         <svg
           className="w-8 hover:-rotate-90 duration-300"
-          xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
