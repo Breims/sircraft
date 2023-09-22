@@ -95,7 +95,7 @@ const dataLines = [
     description:
       "Vive momentos con una compañera de aventuras, confidentes de sueños y testigos de momentos especiales con nuestras muñecas.",
     image: "/assets/images/muñecas.webp",
-    route: "lines/dolls",
+    route: "lines/munecas",
   },
   {
     id: 5,

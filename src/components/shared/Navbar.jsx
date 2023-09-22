@@ -22,11 +22,14 @@ const Navbar = () => {
     setAccordion((prevState) => (prevState === "" ? "hidden" : ""));
   };
 
-  const [openMenu, setOpenMenu] = useState("hidden");
+  const closeMenu = () => {
+    setAccordion("hidden");
+    setOpenMenu("hidden");
+  };
 
+  const [openMenu, setOpenMenu] = useState("hidden");
   const openHamburgerMenu = () => {
     setOpenMenu((prevState) => (prevState === "" ? "hidden" : ""));
-    setAccordion("hidden");
   };
 
   const scrollToElement = (elementId) => {
@@ -35,6 +38,7 @@ const Navbar = () => {
       top: element.offsetTop,
       behavior: "smooth",
     });
+    closeMenu();
   };
 
   const pathname = usePathname();
@@ -42,13 +46,9 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 z-20 lg:grid w-full">
-      <nav className="flex flex-wrap lg:flex-nowrap h-[55px] lg:h-[60px] w-full justify-between items-center backdrop-blur-md bg-slate-50 bg-opacity-90 shadow-lg">
+      <nav className="flex flex-wrap lg:flex-nowrap h-[55px] w-full justify-between items-center backdrop-blur-md bg-slate-50 bg-opacity-90 shadow-lg">
         <section className="w-full flex justify-between px-8 xl:px-12">
-          <Link
-            href="/"
-            className="flex items-center"
-            onClick={openHamburgerMenu}
-          >
+          <Link href="/" className="flex items-center" onClick={closeMenu}>
             <Image
               className="w-8 lg:w-9"
               src={sircraft}
@@ -62,14 +62,14 @@ const Navbar = () => {
           </Link>
 
           <ul
-            className={`${openMenu} absolute lg:static flex flex-col lg:flex lg:flex-row justify-center lg:items-center w-full lg:w-auto top-[3.4rem] left-0 px-8 lg:px-0 font-semibold backdrop-blur-md lg:backdrop-blur-0 bg-white bg-opacity-90 lg:bg-transparent divide-y lg:divide-y-0 divide-pink-600`}
+            className={`${openMenu} absolute lg:static flex flex-col lg:flex lg:flex-row justify-center lg:items-center w-full lg:w-auto top-[3.4rem] left-0 px-8 lg:px-0 font-semibold backdrop-blur-md lg:backdrop-blur-0 bg-white bg-opacity-90 lg:bg-transparent divide-y lg:divide-y-0 divide-pink-600 shadow-lg lg:shadow-none`}
           >
             <NavLink
               href="/"
               activeClasses={activeLiStyle}
               defaultClasses={liStyle}
               text="Inicio"
-              logic={openHamburgerMenu}
+              exec={openHamburgerMenu}
             />
 
             <li
@@ -94,22 +94,21 @@ const Navbar = () => {
                 </svg>
               </section>
               <section
-                className={`${Accordion} lg:absolute -left-1/2 top-[70px] lg:h-screen lg:w-screen lg:pl-[16.5rem] 2xl:pl-[24.5rem]`}
+                className={`${Accordion} lg:absolute -left-1/2 top-[75px] lg:h-screen lg:w-screen lg:pl-[16.5rem] 2xl:pl-[24.5rem] animate-fade-down animate-once animate-duration-500 animate-delay-300`}
               >
                 <ul
                   className={`lg:w-[300px] lg:rounded-xl grid px-8 py-4 lg:shadow-lg lg:bg-slate-50 lg:backdrop-blur-md lg:bg-opacity-95 font-semibold uppercase font-sans text-xs`}
                 >
                   {dataLines.map((data) => (
-                    <div key={data.id}>
-                      <NavLink
-                        href={`/${data.route}`}
-                        activeClasses="underline px-6 py-4 grid place-items-start
+                    <NavLink
+                      key={data.id}
+                      href={`/${data.route}`}
+                      activeClasses="underline px-6 py-4 grid place-items-start
                       font-bold text-purple-600 hover:bg-slate-100"
-                        defaultClasses="grid place-items-start px-6 py-4 hover:bg-slate-100"
-                        text={data.line}
-                        logic={openHamburgerMenu}
-                      />
-                    </div>
+                      defaultClasses="grid place-items-start px-6 py-4 hover:bg-slate-100"
+                      text={data.line}
+                      exec={openHamburgerMenu}
+                    />
                   ))}
                 </ul>
               </section>
@@ -120,23 +119,24 @@ const Navbar = () => {
               activeClasses={activeLiStyle}
               defaultClasses={liStyle}
               text="Servicios"
-              logic={openHamburgerMenu}
+              exec={closeMenu}
             />
             <NavLink
               href="/productos"
               activeClasses={activeLiStyle}
               defaultClasses={liStyle}
               text="Productos"
-              logic={openHamburgerMenu}
+              exec={closeMenu}
             />
             <NavLink
               href="/nosotros"
               activeClasses={activeLiStyle}
               defaultClasses={liStyle}
               text="¿Quienes somos?"
-              logic={openHamburgerMenu}
+              exec={closeMenu}
             />
-            <li className={`flex items-center py-0 lg:hidden ${liStyle}`}>
+            <li className={`flex items-center py-0 lg:hidden ${liStyle}`}
+            onClick={() => scrollToElement("footer")}>
               <span>Contactanos</span>
               <svg
                 className="ml-1 w-4"
@@ -230,7 +230,8 @@ const Navbar = () => {
           </div>
         </section>
       </nav>
-      <section className="hidden lg:flex items-center w-full h-[10px] px-12 py-[2px] mr-auto backdrop-blur-md bg-slate-50 bg-opacity-90">
+
+      <section className="hidden lg:flex items-center w-full h-[20px] px-12 py-[2px] mr-auto backdrop-blur-md bg-slate-50 bg-opacity-90">
         <NavLink
           image={
             <svg
@@ -253,6 +254,7 @@ const Navbar = () => {
           text={`Inicio`}
           activeClasses="px-1 text-[0.6rem] uppercase font-semibold text-pink-600"
           defaultClasses="px-1 text-[0.6rem] text-slate-900 uppercase hover:font-semibold hover:text-pink-600"
+          exec={closeMenu}
         />
         {paths.map((path, index) => (
           <div key={index}>
@@ -261,6 +263,7 @@ const Navbar = () => {
               text={`/ ${path}`}
               defaultClasses="px-1 text-[0.6rem] text-slate-900 uppercase hover:font-semibold hover:text-pink-600"
               activeClasses="px-1 text-[0.6rem] uppercase font-semibold text-pink-600"
+              exec={closeMenu}
             />
           </div>
         ))}

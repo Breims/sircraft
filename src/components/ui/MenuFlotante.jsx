@@ -1,7 +1,7 @@
 const MenuFlotante = () => {
   
   return (
-    <aside className={`absolute xl:fixed xl:top-[4.6rem] left-0 xl:mt-2 xl:mx-6 xl:p-6 mx-4 xl-mx-auto p-2 w-1/4 2xl:w-auto mt-28 overflow-y-auto border shadow-lg`}>
+    <aside className={`absolute xl:fixed xl:top-[4.6rem] left-0 xl:mt-2 xl:mx-6 xl:p-6 mx-4 xl-mx-auto p-2 w-1/4 2xl:w-auto mt-28 overflow-y-auto border shadow-lg bg-slate-50`}>
       <h1 className="uppercase text-sm xl:text-base font-bold xl:tracking-wide p-1 xl:p-2">
         ¿ En qué te podemos ayudar ?
       </h1>

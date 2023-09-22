@@ -5,71 +5,84 @@ import Whatsapp from "../ui/Whatsapp";
 
 const Footer = () => {
   return (
-    <footer id="footer" className="grid bg-slate-50">
-      <section className="grid grid-cols-2 lg:grid-cols-3 xl:m-12 lg:divide-x lg:divide-purple-100 m-8">
-        <div className="lg:m-8 grid lg:block place-items-center mr-8 md:mr-0">
-          <figure className="grid place-items-center">
+    <footer id="footer" className="bg-slate-50">
+      <section className="grid md:grid-cols-3 xl:m-12 lg:divide-x lg:divide-purple-100 m-8">
+        
+          <figure className="grid place-content-center place-items-center p-4">
             <Image
-              className="w-3/4 md:w-1/2 object-cover p-1"
+              className="w-44 lg:w-52 object-cover p-1"
+              width={600}
+              height={600}
               src={logo}
               alt="sircraft"
             />
-            <div className=" ">
-              <p className="text-center text-slate-800 md:text-lg md:tracking-wide text-xs font-bold">
+            <div>
+              <p className="text-center text-slate-800 md:text-base lg:text-xl text-[0.6rem] md:tracking-wide font-bold">
                 CREANDO HISTORIAS
               </p>
               <div className="bg-purple-200 h-0.5" />
-              <p className="text-center md:tracking-wide md:text-lg text-slate-500 text-xs">
+              <p className="text-center md:tracking-wide md:text-base lg:text-xl text-[0.6rem] text-slate-500">
                 Con Nuestras Manos
               </p>
             </div>
           </figure>
-        </div>
 
-        <div className="md:p-8">
-          <p className="font-bold text-slate-800 md:text-lg md:p-2 py-2">
+        <div className="p-4 md:px-4 lg:p-10 grid items-center">
+          <p className="font-bold text-slate-800 md:text-lg text-center py-2">
             Servicios
           </p>
-          <ul className="md:py-4 py-1">
-            <li className="py-2 md:p-2 text-slate-500 text-xs md:text-sm">
+          <ul className="grid">
+            <Link
+              href={`/servicios`}
+              className="py-2 md:p-2 text-slate-500 text-xs md:text-sm"
+            >
               Creaciones Personalizadas
-            </li>
-            <li className="py-2 md:p-2 text-slate-500 text-xs md:text-sm">
+            </Link>
+            <Link
+              href={`/servicios`}
+              className="py-2 md:p-2 text-slate-500 text-xs md:text-sm"
+            >
               Publicidad
-            </li>
-            <li className="py-2 md:p-2 text-slate-500 text-xs md:text-sm">
+            </Link>
+            <Link
+              href={`/servicios`}
+              className="py-2 md:p-2 text-slate-500 text-xs md:text-sm"
+            >
               Capacitaciones
-            </li>
-            <li className="py-2 md:p-2 text-slate-500 text-xs md:text-sm">
+            </Link>
+            <Link
+              href={`/servicios`}
+              className="py-2 md:p-2 text-slate-500 text-xs md:text-sm"
+            >
               Sublimación
-            </li>
+            </Link>
           </ul>
         </div>
 
-        <div className="col-span-2 lg:col-auto">
-          <div className="md:mx-12 bg-purple-200 h-0.5 lg:hidden"></div>
 
-          <div>
-            <div className="md:px-12 py-6">
-              <p className="font-bold text-slate-800 md:text-lg">Correo Electrónico</p>
-              <p className="text-xs md:text-sm text-slate-500">
-                sircraft.desing@gmail.com
-              </p>
+        <div className="col-span-2 md:col-auto p-4 lg:p-10 grid">
+          <div className="bg-purple-200 h-0.5 md:hidden"></div>
+
+          <p className="py-2 text-slate-800 text-center font-bold md:text-lg">
+          Escríbenos
+          </p>
+
+          <div className="w-full text-xs md:text-base py-2">
+            <div className="w-full py-4 md:py-2">
+              <p className="font-bold text-slate-800">Correo Electrónico</p>
+              <p className="text-slate-500">sircraft.desing@gmail.com</p>
             </div>
 
-            <div className="md:px-12 py-6">
-              <p className="md:text-lg font-bold">Telefono</p>
-              <p className="text-xs md:text-sm text-slate-500">+57 300 604 5248</p>
+            <div className="w-full py-4 md:py-2">
+              <p className="font-bold">Telefono</p>
+              <p className="text-slate-500">+57 300 604 5248</p>
             </div>
           </div>
 
-          <div className="md:mx-12 bg-purple-200 h-0.5"></div>
+          <div className="bg-purple-200 h-0.5"></div>
 
-          <div className="p-1">
-            <p className="text-slate-800 text-center font-bold md:text-lg">
-              Redes Sociales
-            </p>
-            <div className="py-4 w-1/2 mx-auto grid grid-flow-col place-items-center">
+          <div>
+            <div className="py-4 md:py-0 mx-auto grid grid-flow-col place-items-center">
               <Whatsapp
                 img={
                   <svg
@@ -112,6 +125,7 @@ const Footer = () => {
       </section>
 
       <div className="h-0.5 bg-purple-100 md:mx-12" />
+
       <section className="grid grid-flow-col place-content-between mx-8 md:mx-12 py-10">
         <span className="font-light text-xs md:text-sm text-slate-500">
           Powered By{" "}

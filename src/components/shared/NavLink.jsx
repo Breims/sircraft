@@ -3,15 +3,17 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-const NavLink = ({ href, text, activeClasses, defaultClasses, key, logic, image }) => {
+const NavLink = ({ href, text, activeClasses, defaultClasses, key, image, exec }) => {
   const path = usePathname();
   const isActive = path === href;
 
   return (
-    <Link href={href} key={key} onClick={logic}>
-        <div className={`flex ${isActive ? activeClasses : defaultClasses }`}>
+    <Link href={href} key={key}>
+        <li className={`flex ${isActive ? activeClasses : defaultClasses }`}
+        onClick={exec}
+        >
            {image} {text}
-        </div>
+        </li>
     </Link>
   );
 };

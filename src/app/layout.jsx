@@ -1,7 +1,7 @@
 import Footer from "@/components/shared/Footer.jsx";
-import '../style/globals.css';
+import "../style/globals.css";
 import ButtonUp from "@/components/ui/ButtonUp";
-import { Poppins } from "next/font/google"
+import { Poppins } from "next/font/google";
 import Navbar from "@/components/shared/Navbar";
 
 const poppins = Poppins({
@@ -9,16 +9,16 @@ const poppins = Poppins({
   style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",
-})
+});
 
 export const metadata = {
-  title: 'Sircraft Page',
-  description: 'Making stories with our hands',
-}
+  title: "Sircraft Page",
+  description: "Making stories with our hands",
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es"  className={ poppins.className } >
+    <html lang="es" className={poppins.className}>
       <body>
         <Navbar />
         {children}
