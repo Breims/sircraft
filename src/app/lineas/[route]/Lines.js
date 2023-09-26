@@ -20,7 +20,7 @@ const dataLines = [
     description:
       "Vive una experiencia excepcional al permitirte crear tazas que cuenten tu historia.",
     image: "/assets/images/mugs.webp",
-    route: "lines/mugs",
+    route: "lineas/mugs",
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ const dataLines = [
     description:
       "Celebra los momentos más especiales de la vida, honrar a seres queridos, transmitir mensajes de aliento y aprecio, con nuestros recordatorios.",
     image: "/assets/images/recordatorio.webp",
-    route: "lines/recordatorios",
+    route: "lineas/recordatorios",
   },
   {
     id: 3,
@@ -71,34 +71,10 @@ const dataLines = [
     description:
       "Lleva expresiones de estilo, personalidad y un toque de alegría en tu día a día con nuestros llaveros.",
     image: "/assets/images/llaveros.webp",
-    route: "lines/llaveros",
+    route: "lineas/llaveros",
   },
   {
     id: 4,
-    title: "¡MUÑECAS ADORABLES!",
-    img1: "/assets/images/muñeca1.webp",
-    cover: "/assets/images/cover-muñeca.webp",
-    paragraph1:
-      "Nuestras muñecas son auténticas creaciones artísticas que reflejan la pasión por el detalle y la belleza en cada puntada. El crochet y el uso de trapos nos permiten dar vida a muñecas encantadoras que despiertan sonrisas y emociones. Cada una de ellas está diseñada para convertirse en un compañero fiel, un regalo lleno de significado o simplemente una pieza decorativa que alegrará cualquier espacio.",
-    paragraph2:
-      "En SirCraft, el arte del crochet y el ingenio con los trapos se unen para dar vida a nuestras muñecas. Nuestro talentoso equipo de artesanos combina su habilidad con la creatividad, utilizando hilos de colores vibrantes y trapos suaves para tejer y dar forma a cada muñeca con dedicación y precisión.",
-    paragraph3:
-      "El crochet nos permite crear detalles encantadores y formas adorables, mientras que el uso de trapos nos da la posibilidad de agregar texturas y personalidad única a cada muñeca. Cada puntada es una expresión artística que refleja el cariño y la atención al detalle que ponemos en cada creación.",
-    img2: "/assets/images/muñeca2.webp",
-    paragraph4:
-      "En SirCraft, creemos que las muñecas son mucho más que simples juguetes; son compañeras de aventuras, confidentes de sueños y testigos de momentos especiales. Nuestro propósito es ofrecerte muñecas que despierten la imaginación y la alegría en personas de todas las edades.",
-    paragraph5:
-      "Ya sea que busques una muñeca para un niño que necesita un amigo para jugar, un regalo especial para alguien querido o simplemente una pieza decorativa para tu hogar, nuestras muñecas son la elección perfecta. Cada muñeca está hecha con amor y cariño, llevando consigo un pedacito de la pasión por el arte y la artesanía que nos define.",
-    paragraph6:
-      "Nuestro deseo es que nuestras muñecas se conviertan en tesoros que formen parte de momentos memorables y que traigan alegría y calidez a tu vida. Cada muñeca tiene su propia personalidad y belleza, lista para acompañarte en tus aventuras y convertirse en una pieza preciada en tu colección.",
-    line: "Muñecas",
-    description:
-      "Vive momentos con una compañera de aventuras, confidentes de sueños y testigos de momentos especiales con nuestras muñecas.",
-    image: "/assets/images/muñecas.webp",
-    route: "lines/munecas",
-  },
-  {
-    id: 5,
     title: "¡ENCANTADORES PELUCHES!",
     img1: "/assets/images/peluche1.webp",
     cover: "/assets/images/cover-peluche.webp",
@@ -119,10 +95,10 @@ const dataLines = [
     description:
       "Vive la experiencia de tener un amigo que está siempre ahí para ti, listos para brindarte consuelo y cariño con nuestros peluches.",
     image: "/assets/images/peluche.webp",
-    route: "lines/peluches",
+    route: "lineas/peluches",
   },
   {
-    id: 6,
+    id: 5,
     title: "¡FIGURAS DE TODO TIPO!",
     img1: "/assets/images/figuras1.webp",
     cover: "/assets/images/cover-figuras.webp",
@@ -142,10 +118,10 @@ const dataLines = [
     description:
       "Decora tu espacio con un símbolo de pasión, inspiración y fandom con nuestras figuras.",
     image: "/assets/images/figuras2.webp",
-    route: "lines/figuras",
+    route: "lineas/figuras",
   },
   {
-    id: 7,
+    id: 6,
     title: "¡ALCANCÍAS INSPIRADORAS!",
     img1: "/assets/images/alcancias1.webp",
     cover: "/assets/images/cover-alcancias.webp",
@@ -166,10 +142,10 @@ const dataLines = [
     description:
       "Ahorra dinero de forma divertida y creativa expresando tu amor por el anime, los cómics y los videojuegos.",
     image: "/assets/images/alcancias1.webp",
-    route: "lines/alcancias",
+    route: "lineas/alcancias",
   },
   {
-    id: 8,
+    id: 7,
     title: "¡MATEROS COLECCIONABLES!",
     img1: "/assets/images/materos1.webp",
     cover: "/assets/images/cover-materos.webp",
@@ -190,10 +166,10 @@ const dataLines = [
     description:
       "Decora tu espacio o jardín con tus personajes favoritos del anime, cómics o videojuegos con nuestros materos.",
     image: "/assets/images/materos1.webp",
-    route: "lines/materos",
+    route: "lineas/materos",
   },
   {
-    id: 9,
+    id: 8,
     title: "¡CUADROS PERSONALIZADOS!",
     img1: "/assets/images/cuadros1.webp",
     cover: "/assets/images/cover-cuadros.webp",
@@ -214,7 +190,7 @@ const dataLines = [
     description:
       "Conectar con tus personajes y mundos favoritos de una manera única y artística con nuestros cuadros.",
     image: "/assets/images/cuadros1.webp",
-    route: "lines/cuadros",
+    route: "lineas/cuadros",
   },
 ];
 

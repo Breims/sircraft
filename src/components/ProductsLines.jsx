@@ -1,4 +1,4 @@
-import LinesCards from "./lines/LinesCards";
+import LinesCards from "./ui/LinesCards";
 
 
 const Productslines = () => {

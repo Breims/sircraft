@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import dataLines from "./Lines.js";
+import dataLines from "../../app/lineas/[route]/Lines.js";
 
 const LinesCards = () => {
   return (
@@ -30,9 +30,6 @@ const LinesCards = () => {
             </article>
           </Link>
         ))}
-        <div className="hidden xl:block w-28 h-28 m-auto rounded-full bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl"></div>
-        <div className="hidden xl:block w-28 h-28 m-auto rounded-full bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl"></div>
-        <div className="hidden xl:block w-28 h-28 m-auto rounded-full bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl"></div>
       </div>
     </>
   );

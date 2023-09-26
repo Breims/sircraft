@@ -1,35 +1,40 @@
 import Image from "next/image";
-import dataLines from "@/components/lines/Lines.js";
+import dataLines from "@/app/lineas/[route]/Lines.js";
 import comillaS from "@public/assets/icons/comillasSup.svg";
 import comillaD from "@public/assets/icons/comillasDown.svg";
+import Carrusel from "@/components/ui/Carrusel";
 
 export const metadata = {
   title: "SirCraft Lineas",
   description: "Lineas de producción SirCraft",
-}
+};
 
 const Lines = ({ params }) => {
   const data = dataLines.find(
-    (routes) => routes.route === `lines/${params.route}`
+    (routes) => routes.route === `lineas/${params.route}`
   );
 
   return (
     <section key={data.id}>
       <header>
         <section className="relative mt-12 md:mt-0">
-          <figure className="grid place-content-center place-items-center lg:h-screen">
-            <Image
-              className="lg:h-screen w-screen object-cover"
-              src={data.cover}
-              width="1366"
-              height="768"
-              alt="coverMugs"
-            />
-          </figure>
+          <Carrusel />
+
           <div className="absolute h-full w-full top-0 bg-black opacity-70">
-            <p className="h-full grid place-content-center place-items-center text-white font-HelveticaBold text-xl md:text-5xl lg:text-[3.7rem] xl:text-[5rem] animate-fade-down animate-once animate-duration-500 animate-delay-300">
-              {data.title}
-            </p>
+            <div className="h-full grid place-content-center animate-fade-down animate-once animate-duration-500 animate-delay-300">
+              <div className="text-center grid place-content-center">
+                <p className="text-[1.4rem] md:text-[3.5rem] lg:text-[4rem] 2xl:text-[5.5rem] font-bold text-transparent bg-clip-text bg-gradient-to-l from-pink-500 via-sky-500 to-purple-800 tracking-wide">
+                  CREANDO HISTORIAS
+                </p>
+                <p className="text-[1.2rem] md:text-[2.9rem] lg:text-[3.4rem] 2xl:text-[4.6rem] tracking-widest font-thin text-slate-50">
+                  ¡CON NUESTRAS MANOS!
+                </p>
+              </div>
+              <div className="mt-2 h-0.5 bg-slate-50"></div>
+              <p className="text-white font-bold text-xl md:text-5xl lg:text-[3.7rem] xl:text-[5rem] ">
+                {data.title}
+              </p>
+            </div>
           </div>
         </section>
       </header>

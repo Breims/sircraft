@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import data from "../lines/Lines.js";
+import data from "../../app/lineas/[route]/Lines.js";
 
 const Carrusel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,9 +18,9 @@ const Carrusel = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative lg:h-screen overflow-hidden">
+    <div className="relative lg:h-[70vh] overflow-hidden bg-slate-800">
       <div
-        className="flex w-full lg:h-screen transition-transform ease-in-out duration-500"
+        className="flex w-full transition-transform ease-in-out duration-500"
         style={{
           transform: `translateX(-${currentIndex * 100}%)`,
         }}
@@ -31,8 +31,8 @@ const Carrusel = () => {
               src={image.cover}
               alt={`Slide ${image.id + 1}`}
               width={1366}
-              height={768}
-              className="w-screen lg:h-screen object-cover"
+              height={400}
+              className="m-auto"
             />
           </figure>
         ))}

@@ -6,9 +6,9 @@ import Whatsapp from "../ui/Whatsapp";
 const Footer = () => {
   return (
     <footer id="footer" className="bg-slate-50">
-      <section className="grid md:grid-cols-3 xl:m-12 lg:divide-x lg:divide-purple-100 m-8">
+      <section className="grid md:grid-cols-2 lg:grid-cols-3 xl:m-12 lg:divide-x lg:divide-purple-100 m-8">
         
-          <figure className="grid place-content-center place-items-center p-4">
+          <figure className="place-content-center place-items-center p-4 hidden lg:grid">
             <Image
               className="w-44 lg:w-52 object-cover p-1"
               width={600}
@@ -16,7 +16,7 @@ const Footer = () => {
               src={logo}
               alt="sircraft"
             />
-            <div>
+            <div className="">
               <p className="text-center text-slate-800 md:text-base lg:text-xl text-[0.6rem] md:tracking-wide font-bold">
                 CREANDO HISTORIAS
               </p>
@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
           </figure>
 
-        <div className="p-4 md:px-4 lg:p-10 grid items-center">
+        <div className="p-4 md:px-4 lg:p-10 grid place col-span-2 md:col-auto">
           <p className="font-bold text-slate-800 md:text-lg text-center py-2">
             Servicios
           </p>

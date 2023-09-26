@@ -1,5 +1,6 @@
 import HomePage from "@/components/HomePage";
 import Productslines from "@/components/ProductsLines";
+import ServiciosCards from "@/components/ServiciosCards";
 import Decoration from "@/components/ui/Decoration";
 import { Poppins } from "next/font/google"
 
@@ -23,6 +24,7 @@ export default function Home() {
       <section className="flex justify-end xl:hidden">
         <Decoration />
       </section>
+      <ServiciosCards />
       <Productslines />
       <section className="flex justify-start md:hidden">
         <Decoration />

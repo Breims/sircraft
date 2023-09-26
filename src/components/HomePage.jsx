@@ -5,20 +5,20 @@ const animation =
 
 const HomePage = () => {
   return (
-    <header id="home" className={`relative mt-[55px] lg:m-auto`}>
-      <figure className="w-full">
+    <header id="home" className={`relative mt-[55px] lg:m-auto lg:h-[70vh]`}>
+      <figure className="w-full lg:h-[70vh]">
         <Carrusel />
       </figure>
 
-      <section className="absolute top-0 w-full h-full px-8 xl:px-12 bg-slate-950 bg-opacity-70">
-        <div className={`w-full h-full grid place-content-center ${animation}`}>
+      <section className="absolute top-0 w-full lg:h-[70vh] h-full px-8 xl:px-12 bg-slate-950 bg-opacity-70">
+        <div className={`w-full h-full grid place-content-center place ${animation}`}>
           <div className="text-center grid place-content-center">
-            <p className="text-[1.4rem] md:text-[3.5rem] lg:text-[4rem] 2xl:text-[5.5rem] font-bold text-transparent bg-clip-text bg-gradient-to-l from-pink-500 via-sky-500 to-purple-800 tracking-wide">
+            <h1 className="text-[1.4rem] md:text-6xl lg:text-3xl xl:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-l from-pink-500 via-sky-500 to-purple-800 tracking-wide xl:mb-2">
               CREANDO HISTORIAS
-            </p>
-            <p className="text-[1.2rem] md:text-[2.9rem] lg:text-[3.4rem] 2xl:text-[4.6rem] tracking-widest font-thin text-slate-50">
+            </h1>
+            <h1 className="text-[1.2rem] md:text-[3.15rem] lg:text-[1.6rem] xl:text-[3.15rem]  tracking-widest font-thin text-slate-50 xl:mb-2">
               ¡CON NUESTRAS MANOS!
-            </p>
+            </h1>
           </div>
 
           <div className="mt-2 h-0.5 bg-slate-50"></div>
@@ -48,22 +48,6 @@ const HomePage = () => {
               </span>
             </div>
           </div>
-
-          <figure className="m-auto hidden lg:block">
-            <svg
-              className="text-slate-50 m-auto hover:animate-bounce w-6 md:w-14"
-              width={70}
-              height={70}
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              fill="none"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" />
-              <path d="M7 7l5 5l5 -5" />
-              <path d="M7 13l5 5l5 -5" />
-            </svg>
-          </figure>
         </div>
       </section>
     </header>

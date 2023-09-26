@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
-import dataLines from "../lines/Lines";
+import dataLines from "../../app/lineas/[route]/Lines";
 import NavLink from "./NavLink";
 import Whatsapp from "../ui/Whatsapp";
 
@@ -62,7 +62,7 @@ const Navbar = () => {
           </Link>
 
           <ul
-            className={`${openMenu} absolute lg:static flex flex-col lg:flex lg:flex-row justify-center lg:items-center w-full lg:w-auto top-[3.4rem] left-0 px-8 lg:px-0 font-semibold backdrop-blur-md lg:backdrop-blur-0 bg-white bg-opacity-90 lg:bg-transparent divide-y lg:divide-y-0 divide-pink-600 shadow-lg lg:shadow-none`}
+            className={`${openMenu} animate-fade-down animate-once animate-duration-500 animate-delay-300 absolute lg:static flex flex-col lg:flex lg:flex-row justify-center lg:items-center w-full lg:w-auto top-[3.4rem] left-0 px-8 lg:px-0 font-semibold backdrop-blur-md lg:backdrop-blur-0 bg-white bg-opacity-90 lg:bg-transparent divide-y lg:divide-y-0 divide-pink-600 shadow-lg lg:shadow-none`}
           >
             <NavLink
               href="/"
@@ -135,8 +135,10 @@ const Navbar = () => {
               text="¿Quienes somos?"
               exec={closeMenu}
             />
-            <li className={`flex items-center py-0 lg:hidden ${liStyle}`}
-            onClick={() => scrollToElement("footer")}>
+            <li
+              className={`flex items-center py-0 lg:hidden ${liStyle}`}
+              onClick={() => scrollToElement("footer")}
+            >
               <span>Contactanos</span>
               <svg
                 className="ml-1 w-4"
@@ -260,7 +262,7 @@ const Navbar = () => {
           <div key={index}>
             <NavLink
               href={`/${paths.slice(0, index + 1).join("/")}`}
-              text={`/ ${path}`}
+              text={`》${path}`}
               defaultClasses="px-1 text-[0.6rem] text-slate-900 uppercase hover:font-semibold hover:text-pink-600"
               activeClasses="px-1 text-[0.6rem] uppercase font-semibold text-pink-600"
               exec={closeMenu}
